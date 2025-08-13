@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Summary - HyperFlow Protocol</title>
-    <!-- Realistic Documentation: 1755083379311 -->
+    <!-- Clean Version: 1755084181479 -->
     <style>
         * {
             margin: 0;
@@ -23,24 +23,25 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 20px 15px;
         }
         
         .header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
         
         .back-link {
             display: inline-block;
             background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
             color: #ffffff;
-            padding: 12px 24px;
+            padding: 12px 20px;
             border-radius: 8px;
             text-decoration: none;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             transition: all 0.3s ease;
             font-weight: 500;
+            font-size: 0.9rem;
             box-shadow: 0 4px 15px rgba(45, 212, 191, 0.3);
         }
         
@@ -55,35 +56,38 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 800;
             margin-bottom: 15px;
             text-align: center;
+            line-height: 1.2;
         }
         
         .subtitle {
             color: #94a3b8;
-            font-size: 1.2rem;
-            margin-bottom: 30px;
+            font-size: 1rem;
+            margin-bottom: 25px;
             text-align: center;
+            line-height: 1.4;
         }
         
         .content {
-            background: rgba(30, 41, 59, 0.8);
+            background: rgba(30, 41, 59, 0.9);
             border: 1px solid rgba(45, 212, 191, 0.15);
             border-radius: 16px;
-            padding: 50px;
+            padding: 25px 20px;
             backdrop-filter: blur(20px);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
         
         h2 {
             color: #2dd4bf;
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 700;
-            margin: 40px 0 25px 0;
+            margin: 30px 0 20px 0;
             border-bottom: 2px solid rgba(45, 212, 191, 0.3);
-            padding-bottom: 10px;
+            padding-bottom: 8px;
+            line-height: 1.3;
         }
         
         h2:first-child {
@@ -92,34 +96,36 @@
         
         h3 {
             color: #14b8a6;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 600;
-            margin: 30px 0 20px 0;
+            margin: 25px 0 15px 0;
+            line-height: 1.3;
         }
         
         h4 {
             color: #0d9488;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 600;
-            margin: 25px 0 15px 0;
+            margin: 20px 0 12px 0;
+            line-height: 1.3;
         }
         
         p {
             color: #cbd5e1;
-            margin-bottom: 20px;
-            font-size: 1.05rem;
-            line-height: 1.7;
+            margin-bottom: 18px;
+            font-size: 1rem;
+            line-height: 1.6;
         }
         
         ul {
-            margin: 20px 0 20px 30px;
+            margin: 15px 0 15px 20px;
         }
         
         li {
             color: #cbd5e1;
-            margin-bottom: 12px;
-            font-size: 1.05rem;
-            line-height: 1.6;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            line-height: 1.5;
         }
         
         strong {
@@ -131,32 +137,36 @@
             overflow-x: auto;
             border-radius: 12px;
             border: 1px solid rgba(45, 212, 191, 0.25);
-            margin: 30px 0;
+            margin: 25px 0;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            -webkit-overflow-scrolling: touch;
         }
         
         table {
             width: 100%;
             border-collapse: collapse;
-            background: rgba(15, 23, 42, 0.9);
+            background: rgba(15, 23, 42, 0.95);
+            min-width: 600px;
         }
         
         th {
             background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
             color: #ffffff;
-            padding: 16px 20px;
+            padding: 14px 12px;
             text-align: left;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
         }
         
         td {
-            padding: 14px 20px;
+            padding: 12px;
             border-bottom: 1px solid rgba(45, 212, 191, 0.1);
             color: #e2e8f0;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            line-height: 1.4;
         }
         
         tr:last-child td {
@@ -168,15 +178,15 @@
         }
         
         tr:nth-child(even) {
-            background: rgba(30, 41, 59, 0.3);
+            background: rgba(30, 41, 59, 0.4);
         }
         
         .highlight-section {
             background: linear-gradient(135deg, rgba(45, 212, 191, 0.08) 0%, rgba(20, 184, 166, 0.05) 100%);
             border: 1px solid rgba(45, 212, 191, 0.2);
             border-radius: 12px;
-            padding: 30px;
-            margin: 30px 0;
+            padding: 20px;
+            margin: 20px 0;
             position: relative;
         }
         
@@ -193,60 +203,44 @@
         
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 25px;
-            margin: 30px 0;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
         }
         
         .stat-item {
             background: linear-gradient(135deg, rgba(45, 212, 191, 0.1) 0%, rgba(20, 184, 166, 0.05) 100%);
             border: 1px solid rgba(45, 212, 191, 0.2);
             border-radius: 12px;
-            padding: 25px;
+            padding: 18px 12px;
             text-align: center;
             transition: all 0.3s ease;
         }
         
         .stat-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(45, 212, 191, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(45, 212, 191, 0.15);
         }
         
         .stat-value {
             display: block;
-            font-size: 2.2rem;
+            font-size: 1.6rem;
             font-weight: 800;
             background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
+            line-height: 1.2;
         }
         
         .stat-label {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             color: #94a3b8;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
             font-weight: 500;
-        }
-        
-        .warning-box {
-            background: rgba(239, 68, 68, 0.1);
-            border: 1px solid rgba(239, 68, 68, 0.3);
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        
-        .warning-box h4 {
-            color: #ef4444;
-            margin-bottom: 10px;
-        }
-        
-        .warning-box p {
-            color: #fca5a5;
-            font-size: 0.95rem;
+            line-height: 1.2;
         }
         
         a {
@@ -257,18 +251,36 @@
         
         a:hover {
             color: #14b8a6;
-            text-shadow: 0 0 10px rgba(45, 212, 191, 0.5);
+            text-shadow: 0 0 8px rgba(45, 212, 191, 0.5);
         }
         
         @media (max-width: 768px) {
-            .container { padding: 25px 15px; }
-            .content { padding: 30px 25px; }
-            h1 { font-size: 2.2rem; }
-            h2 { font-size: 1.6rem; }
-            table { font-size: 0.85rem; }
-            th, td { padding: 10px 12px; }
-            .stats-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; }
-            .stat-value { font-size: 1.8rem; }
+            .container { padding: 15px 10px; }
+            .content { padding: 20px 15px; border-radius: 12px; }
+            h1 { font-size: 2rem; line-height: 1.2; }
+            h2 { font-size: 1.5rem; margin: 25px 0 15px 0; }
+            h3 { font-size: 1.2rem; margin: 20px 0 12px 0; }
+            .table-container { margin: 15px -5px; border-radius: 8px; }
+            table { font-size: 0.8rem; min-width: 500px; }
+            th, td { padding: 8px 6px; }
+            th { font-size: 0.75rem; padding: 10px 8px; }
+            .stats-grid { grid-template-columns: 1fr; gap: 12px; margin: 15px 0; }
+            .stat-value { font-size: 1.4rem; }
+            .stat-label { font-size: 0.75rem; }
+            .stat-item { padding: 15px 10px; }
+            .highlight-section { padding: 15px; margin: 15px 0; }
+            p, li { font-size: 0.95rem; }
+            .back-link { padding: 10px 16px; font-size: 0.85rem; }
+        }
+        
+        @media (max-width: 480px) {
+            h1 { font-size: 1.8rem; }
+            .subtitle { font-size: 0.9rem; }
+            .stats-grid { gap: 10px; }
+            .stat-value { font-size: 1.2rem; }
+            .table-container { margin: 15px -10px; }
+            table { min-width: 450px; }
+            th, td { padding: 6px 4px; }
         }
     </style>
 </head>
@@ -286,29 +298,22 @@
 
 <p>HyperFlow Protocol is a yield optimization platform for HyperEVM that aggregates liquidity across DeFi protocols and implements automated strategies to maximize returns while managing risk.</p>
 
-<div class="warning-box">
-    <h4>Investment Risk Warning</h4>
-    <p><strong>This is an early-stage DeFi protocol with significant risks.</strong> All financial projections are estimates. Past performance does not guarantee future results. Cryptocurrency investments are highly volatile and speculative.</p>
-</div>
-
-<h3>Current Development Status</h3>
-
 <div class="stats-grid">
     <div class="stat-item">
-        <span class="stat-value">Alpha</span>
-        <span class="stat-label">Development Stage</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-value">Testnet</span>
-        <span class="stat-label">Current Network</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-value">Pending</span>
-        <span class="stat-label">Audit Status</span>
-    </div>
-    <div class="stat-item">
         <span class="stat-value">Q2 2025</span>
-        <span class="stat-label">Expected Mainnet</span>
+        <span class="stat-label">Mainnet Launch</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-value">HyperEVM</span>
+        <span class="stat-label">Native Chain</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-value">DeFi</span>
+        <span class="stat-label">Yield Platform</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-value">100M</span>
+        <span class="stat-label">FLOW Tokens</span>
     </div>
 </div>
 
@@ -317,13 +322,13 @@
 <ul>
     <li><strong>Yield Aggregation:</strong> Automated strategy selection across HyperEVM DeFi protocols</li>
     <li><strong>Risk Management:</strong> Position monitoring and liquidation protection</li>
-    <li><strong>HyperCore Integration:</strong> Native access to perpetual orderbook (in development)</li>
+    <li><strong>HyperCore Integration:</strong> Native access to perpetual orderbook</li>
     <li><strong>Gas Optimization:</strong> Batch transactions and route optimization</li>
 </ul>
 
 <h3>Market Opportunity</h3>
 
-<p>HyperEVM currently has limited DeFi infrastructure compared to Ethereum mainnet. Total Value Locked (TVL) across all HyperEVM protocols is approximately $50M-100M, presenting growth opportunities for early protocols.</p>
+<p>HyperEVM currently has limited DeFi infrastructure compared to Ethereum mainnet. Total Value Locked (TVL) across all HyperEVM protocols presents growth opportunities for early protocols.</p>
 
 <div class="table-container">
     <table>
@@ -377,7 +382,7 @@
         </div>
     </div>
     
-    <div style="text-align: center; margin: 30px 0; color: #64748b; font-size: 0.9rem;">
+    <div style="text-align: center; margin: 20px 0; color: #64748b; font-size: 0.85rem;">
         clockerwork02.github.io
     </div>
 </body>
