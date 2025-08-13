@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Summary - HyperFlow Protocol</title>
+    <title>HyperFlow Protocol - Project Summary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,215 +13,173 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0a0f1c;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0f1419;
             color: #e2e8f0;
             line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
         }
         
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
         }
         
         .header {
             text-align: center;
             margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #2d3748;
+        }
+        
+        h1 {
+            color: #14b8a6;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
         }
         
         .back-link {
             display: inline-block;
-            background: rgba(0, 212, 255, 0.1);
-            color: #00d4ff;
-            padding: 10px 20px;
-            border-radius: 6px;
+            margin-bottom: 20px;
+            color: #14b8a6;
             text-decoration: none;
-            margin-bottom: 30px;
+            font-weight: 500;
+            padding: 10px 20px;
+            border: 1px solid #14b8a6;
+            border-radius: 8px;
             transition: all 0.3s ease;
         }
         
         .back-link:hover {
-            background: rgba(0, 212, 255, 0.2);
-            transform: translateY(-2px);
+            background: #14b8a6;
+            color: #0f1419;
         }
         
-        h1 {
-            color: #00d4ff;
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+        .content {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.7) 100%);
+            border: 1px solid #334155;
+            border-radius: 16px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
         }
         
-        h2 {
-            color: #4dd0e1;
+        .content h1 {
+            color: #14b8a6;
             font-size: 1.8rem;
+            margin: 0 0 20px 0;
+            text-align: left;
+        }
+        
+        .content h2 {
+            color: #14b8a6;
+            font-size: 1.5rem;
             margin: 30px 0 15px 0;
-            border-bottom: 2px solid rgba(77, 208, 225, 0.3);
-            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(20, 184, 166, 0.3);
+            padding-bottom: 10px;
         }
         
-        h3 {
-            color: #81c784;
-            font-size: 1.4rem;
-            margin: 25px 0 10px 0;
+        .content h2:first-of-type {
+            margin-top: 0;
         }
         
-        h4 {
-            color: #ffb74d;
+        .content h3 {
+            color: #06b6d4;
             font-size: 1.2rem;
+            margin: 25px 0 12px 0;
+        }
+        
+        .content h4 {
+            color: #22d3ee;
+            font-size: 1rem;
             margin: 20px 0 8px 0;
         }
         
-        p {
+        .content p {
+            color: #cbd5e1;
             margin-bottom: 15px;
-            color: #cbd5e0;
+            text-align: justify;
         }
         
-        ul {
-            margin: 15px 0;
-            padding-left: 25px;
+        .content ul {
+            margin: 15px 0 15px 25px;
         }
         
-        ol {
-            margin: 15px 0;
-            padding-left: 25px;
-        }
-        
-        li {
+        .content li {
+            color: #cbd5e1;
             margin-bottom: 8px;
-            color: #cbd5e0;
         }
         
-        strong {
-            color: #ffffff;
+        .content strong {
+            color: #14b8a6;
             font-weight: 600;
-        }
-        
-        em {
-            color: #a0aec0;
-        }
-        
-        code {
-            background: rgba(0, 212, 255, 0.1);
-            color: #00d4ff;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: monospace;
-            font-size: 0.9em;
-        }
-        
-        .code-block {
-            background: rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(0, 212, 255, 0.3);
-            border-radius: 8px;
-            margin: 20px 0;
-            overflow-x: auto;
-        }
-        
-        .code-block pre {
-            padding: 20px;
-            margin: 0;
-        }
-        
-        .code-block code {
-            background: none;
-            color: #e2e8f0;
-            padding: 0;
-        }
-        
-        hr {
-            border: none;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.5), transparent);
-            margin: 30px 0;
         }
         
         .table-container {
-            background: rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(77, 208, 225, 0.3);
-            border-radius: 12px;
-            padding: 25px;
-            margin: 30px 0;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.1);
-        }
-        
-        .table-container h4 {
-            color: #00d4ff;
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 1.4rem;
-        }
-        
-        .table-responsive {
             overflow-x: auto;
-            border-radius: 8px;
+            margin: 20px 0;
+            border-radius: 12px;
+            border: 1px solid #334155;
         }
         
-        .data-table, .comparison-table {
+        table {
             width: 100%;
             border-collapse: collapse;
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-            overflow: hidden;
+            background: #0f172a;
+            min-width: 600px;
         }
         
-        .data-table th, .comparison-table th {
-            background: rgba(0, 212, 255, 0.2);
-            color: #ffffff;
-            padding: 15px 12px;
+        th {
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            padding: 15px;
             text-align: left;
             font-weight: 600;
-            border-bottom: 2px solid rgba(0, 212, 255, 0.3);
+            font-size: 0.95rem;
+            white-space: nowrap;
         }
         
-        .data-table td, .comparison-table td {
-            padding: 12px;
-            border-bottom: 1px solid rgba(77, 208, 225, 0.2);
-            color: #cbd5e0;
-            background: rgba(0, 0, 0, 0.1);
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #334155;
+            color: #e2e8f0;
         }
         
-        .data-table tr:nth-child(even) td, .comparison-table tr:nth-child(even) td {
-            background: rgba(0, 0, 0, 0.2);
+        tr:last-child td {
+            border-bottom: none;
         }
         
-        .data-table tr:hover td, .comparison-table tr:hover td {
-            background: rgba(0, 212, 255, 0.1);
+        tr:hover {
+            background: rgba(20, 184, 166, 0.05);
         }
         
-        .hyperflow-advantage {
-            background: rgba(129, 199, 132, 0.2) !important;
-            color: #81c784 !important;
+        .percentage {
+            color: #14b8a6;
             font-weight: 600;
         }
         
-        .comparison-table td:first-child {
-            font-weight: 600;
-            color: #ffffff;
+        .amount {
+            color: #22d3ee;
+            font-weight: 500;
         }
         
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-            }
-            
-            .container {
-                padding: 20px 15px;
-            }
-            
-            .table-container {
+            body {
                 padding: 15px;
-                margin: 20px 0;
             }
             
-            .data-table th, .comparison-table th,
-            .data-table td, .comparison-table td {
-                padding: 8px 6px;
-                font-size: 0.9rem;
+            .content {
+                padding: 25px;
+            }
+            
+            table {
+                font-size: 0.8rem;
+                min-width: 500px;
+            }
+            
+            th, td {
+                padding: 8px 10px;
             }
         }
     </style>
@@ -228,77 +187,247 @@
 <body>
     <div class="container">
         <div class="header">
-            <a href="https://Clockerwork02.github.io" class="back-link">← Back to Main Whitepaper</a>
+            <a href="https://clockerwork02.github.io" class="back-link">← Back to Main Whitepaper</a>
+            <h1>HyperFlow Protocol - Project Summary</h1>
         </div>
-        <h1>HyperFlow Protocol - Project Summary</h1>
-
-<h2>Executive Overview</h2>
-<p>HyperFlow Protocol is a next-generation DeFi infrastructure platform specifically designed for the HyperEVM ecosystem. The protocol combines intelligent yield optimization, cross-protocol liquidity aggregation, and advanced risk management to deliver sustainable value through transparent revenue sharing and democratic governance.</p>
-
-<h2>Key Features</h2>
-<ul>
-    <li><strong>Native HyperCore Integration</strong>: Direct orderbook access via precompiles</li>
-    <li><strong>Advanced Yield Strategies</strong>: Delta-neutral and cross-protocol optimization</li>
-    <li><strong>MEV Protection</strong>: Advanced routing and slippage optimization</li>
-    <li><strong>Democratic Governance</strong>: Fair tokenomics without tier discrimination</li>
-    <li><strong>High Revenue Sharing</strong>: 70% of protocol fees to token holders</li>
-</ul>
-
-<h2>Market Opportunity</h2>
-<p>The HyperEVM ecosystem currently lacks sophisticated DeFi infrastructure. HyperFlow addresses:</p>
-<ul>
-    <li>Fragmented liquidity across multiple protocols</li>
-    <li>Limited advanced yield optimization strategies</li>
-    <li>Inefficient cross-protocol interactions</li>
-    <li>MEV exploitation affecting user returns</li>
-    <li>Limited risk management tools</li>
-</ul>
-
-<h2>Competitive Advantages</h2>
-<div class="table-container">
-    <h4>HyperFlow vs Competitors</h4>
-    <div class="table-responsive">
-        <table class="comparison-table">
-            <thead>
-                <tr>
-                    <th>Feature</th>
-                    <th>HyperFlow</th>
-                    <th>Yearn Finance</th>
-                    <th>Convex Finance</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Revenue Share</strong></td>
-                    <td class="hyperflow-advantage">70%</td>
-                    <td>30%</td>
-                    <td>50%</td>
-                </tr>
-                <tr>
-                    <td><strong>Native Integration</strong></td>
-                    <td class="hyperflow-advantage">✓ HyperCore</td>
-                    <td>✗</td>
-                    <td>✗</td>
-                </tr>
-                <tr>
-                    <td><strong>Cross-Protocol</strong></td>
-                    <td class="hyperflow-advantage">✓ Advanced</td>
-                    <td>Limited</td>
-                    <td>Limited</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-
-<h2>Value Proposition</h2>
-<p>HyperFlow delivers value through:</p>
-<ul>
-    <li><strong>First-Mover Advantage</strong>: Early entry into HyperEVM DeFi infrastructure</li>
-    <li><strong>Technical Superiority</strong>: Native precompile access and advanced strategies</li>
-    <li><strong>Community Focus</strong>: Democratic governance and transparent operations</li>
-    <li><strong>Sustainable Economics</strong>: High revenue sharing ensuring long-term alignment</li>
-</ul>
+        
+        <div class="content">
+            <h2>Project Overview</h2>
+            <p><strong>HyperFlow Protocol</strong> is a next-generation DeFi infrastructure platform built specifically for HyperEVM that addresses critical ecosystem gaps through intelligent yield optimization, cross-protocol liquidity aggregation, and advanced risk management.</p>
+            
+            <h2>Core Value Proposition</h2>
+            
+            <h3>Unique Market Position</h3>
+            <ul>
+                <li><strong>First-mover advantage</strong> in HyperEVM advanced DeFi infrastructure</li>
+                <li><strong>Native HyperCore integration</strong> via precompiles for direct orderbook access</li>
+                <li><strong>Cross-protocol optimization</strong> across all major HyperEVM platforms</li>
+                <li><strong>Institutional-grade features</strong> with retail accessibility</li>
+            </ul>
+            
+            <h3>Key Features</h3>
+            <ul>
+                <li><strong>Smart Vault System</strong>: Auto-compounding yield optimization</li>
+                <li><strong>Delta-Neutral Strategies</strong>: Risk-free yield using HyperCore perps + EVM spot</li>
+                <li><strong>Cross-DEX Aggregation</strong>: Best execution across HyperSwap, HyperBloom, etc.</li>
+                <li><strong>Advanced Risk Management</strong>: Liquidation protection and portfolio monitoring</li>
+                <li><strong>Universal Liquidity</strong>: MEV-protected trade routing and slippage optimization</li>
+            </ul>
+            
+            <h2>Token: $FLOW</h2>
+            
+            <h3>Supply & Distribution</h3>
+            <ul>
+                <li><strong>Total Supply</strong>: 1,000,000,000 FLOW (1 billion tokens, fixed supply)</li>
+                <li><strong>Public Sale</strong>: 400M FLOW (40%) - Fair presale launch</li>
+                <li><strong>Development Fund</strong>: 250M FLOW (25%) - 4-year vesting</li>
+                <li><strong>Community Rewards</strong>: 200M FLOW (20%) - Yield farming distribution</li>
+                <li><strong>Team</strong>: 100M FLOW (10%) - 2-year cliff, 4-year vesting</li>
+                <li><strong>Strategic Partnerships</strong>: 50M FLOW (5%) - Performance-based unlock</li>
+            </ul>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Allocation</th>
+                            <th>Percentage</th>
+                            <th>Amount</th>
+                            <th>Vesting Schedule</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Public Sale</td>
+                            <td class="percentage">40%</td>
+                            <td class="amount">400M FLOW</td>
+                            <td>Immediate unlock</td>
+                        </tr>
+                        <tr>
+                            <td>Development Fund</td>
+                            <td class="percentage">25%</td>
+                            <td class="amount">250M FLOW</td>
+                            <td>4-year linear vesting</td>
+                        </tr>
+                        <tr>
+                            <td>Community Rewards</td>
+                            <td class="percentage">20%</td>
+                            <td class="amount">200M FLOW</td>
+                            <td>Yield farming distribution</td>
+                        </tr>
+                        <tr>
+                            <td>Team Allocation</td>
+                            <td class="percentage">10%</td>
+                            <td class="amount">100M FLOW</td>
+                            <td>2-year cliff, 4-year vesting</td>
+                        </tr>
+                        <tr>
+                            <td>Strategic Partnerships</td>
+                            <td class="percentage">5%</td>
+                            <td class="amount">50M FLOW</td>
+                            <td>Performance-based unlock</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>Comprehensive Utility Mechanisms</h3>
+            <ul>
+                <li><strong>Governance & Control</strong>: Community voting (1 FLOW = 1 vote) on all protocol parameters</li>
+                <li><strong>Revenue Sharing</strong>: 70% of all protocol fees distributed to stakers</li>
+                <li><strong>Yield Enhancement</strong>: Access to advanced vaults and delta-neutral strategies</li>
+                <li><strong>Platform Benefits</strong>: MEV protection, priority execution, advanced analytics</li>
+                <li><strong>Cross-Protocol Integration</strong>: Enhanced rewards across HyperEVM ecosystem</li>
+                <li><strong>Collateral Usage</strong>: Use FLOW as collateral in lending protocols</li>
+                <li><strong>Fee Discounts</strong>: Reduced trading and bridge fees for FLOW holders</li>
+                <li><strong>Priority Access</strong>: Early access to new features and strategies</li>
+            </ul>
+            
+            <h2>Revenue Model</h2>
+            
+            <h3>Multiple Income Streams</h3>
+            <ol>
+                <li><strong>Bridge Fees</strong>: 0.1% on cross-chain transfers</li>
+                <li><strong>Vault Performance Fees</strong>: 10% of generated yield</li>
+                <li><strong>Governance Fees</strong>: Small fee for proposal submissions</li>
+                <li><strong>Premium Features</strong>: Advanced analytics and priority support</li>
+            </ol>
+            
+            <h3>Revenue Distribution</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Recipient</th>
+                            <th>Percentage</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Token Holders</td>
+                            <td class="percentage">70%</td>
+                            <td>Staking rewards distribution</td>
+                        </tr>
+                        <tr>
+                            <td>Development Fund</td>
+                            <td class="percentage">20%</td>
+                            <td>Protocol improvements</td>
+                        </tr>
+                        <tr>
+                            <td>Treasury Reserve</td>
+                            <td class="percentage">10%</td>
+                            <td>Emergency fund and growth</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h2>Competitive Advantages</h2>
+            
+            <h3>Technical Superiority</h3>
+            <ul>
+                <li><strong>Native HyperCore Integration</strong>: Direct orderbook access unavailable to competitors</li>
+                <li><strong>Delta-Neutral Yield</strong>: Advanced strategies requiring HyperEVM's dual architecture</li>
+                <li><strong>MEV Protection</strong>: Sophisticated routing protecting users from front-running</li>
+                <li><strong>Cross-Protocol Optimization</strong>: Unified interface for complex DeFi operations</li>
+            </ul>
+            
+            <h3>Community Governance</h3>
+            <ul>
+                <li><strong>Fair Launch</strong>: No tier discrimination or insider advantages</li>
+                <li><strong>High Revenue Sharing</strong>: 70% vs typical 20-30% in competing protocols</li>
+                <li><strong>Community Ownership</strong>: Decentralized governance without centralized control</li>
+                <li><strong>Transparent Operations</strong>: All decisions and revenue flows publicly auditable</li>
+            </ul>
+            
+            <h2>Market Opportunity</h2>
+            
+            <h3>HyperEVM Ecosystem Growth</h3>
+            <ul>
+                <li><strong>Underserved Market</strong>: Limited advanced DeFi infrastructure on HyperEVM</li>
+                <li><strong>Growing TVL</strong>: Increasing capital deployment across HyperEVM protocols</li>
+                <li><strong>Developer Activity</strong>: Rising number of projects building on HyperEVM</li>
+                <li><strong>Institutional Interest</strong>: Growing attention from professional traders and funds</li>
+            </ul>
+            
+            <h3>Revenue Projections</h3>
+            <ul>
+                <li><strong>Phase 1</strong> (Launch): $100K+ monthly revenue from basic vault operations</li>
+                <li><strong>Phase 2</strong> (6 months): $500K+ monthly with cross-protocol integrations</li>
+                <li><strong>Phase 3</strong> (12 months): $2M+ monthly with full feature deployment</li>
+                <li><strong>Long-term</strong>: $10M+ monthly revenue as HyperEVM ecosystem matures</li>
+            </ul>
+            
+            <h2>Development Timeline</h2>
+            
+            <h3>Phase 1: Foundation (Months 1-3)</h3>
+            <ul>
+                <li>Core smart contract deployment</li>
+                <li>Basic vault system with auto-compounding</li>
+                <li>HyperCore orderbook integration</li>
+                <li>Security audits and testing</li>
+            </ul>
+            
+            <h3>Phase 2: Expansion (Months 4-6)</h3>
+            <ul>
+                <li>Cross-DEX aggregation implementation</li>
+                <li>Delta-neutral strategy deployment</li>
+                <li>Cross-chain bridge integration</li>
+                <li>Advanced risk management tools</li>
+            </ul>
+            
+            <h3>Phase 3: Optimization (Months 7-12)</h3>
+            <ul>
+                <li>MEV protection mechanisms</li>
+                <li>Institutional-grade analytics</li>
+                <li>Advanced governance features</li>
+                <li>Cross-protocol partnerships</li>
+            </ul>
+            
+            <h3>Phase 4: Ecosystem Leadership (Year 2+)</h3>
+            <ul>
+                <li>Full protocol maturity</li>
+                <li>Industry-standard positioning</li>
+                <li>Major institutional adoption</li>
+                <li>Cross-chain expansion beyond HyperEVM</li>
+            </ul>
+            
+            <h2>Investment Highlights</h2>
+            
+            <h3>Strong Fundamentals</h3>
+            <ul>
+                <li><strong>Experienced Team</strong>: Proven blockchain development expertise</li>
+                <li><strong>Clear Use Case</strong>: Addresses genuine market gaps in HyperEVM DeFi</li>
+                <li><strong>Sustainable Revenue</strong>: Multiple income streams with clear value proposition</li>
+                <li><strong>Community Focus</strong>: Fair launch and high revenue sharing model</li>
+            </ul>
+            
+            <h3>Growth Catalysts</h3>
+            <ul>
+                <li><strong>HyperEVM Adoption</strong>: Direct correlation with ecosystem growth</li>
+                <li><strong>First-Mover Advantage</strong>: Early positioning in underserved market</li>
+                <li><strong>Technical Moats</strong>: Native integrations difficult for competitors to replicate</li>
+                <li><strong>Network Effects</strong>: More users and liquidity create stronger competitive position</li>
+            </ul>
+            
+            <h3>Risk Management</h3>
+            <ul>
+                <li><strong>Comprehensive Security</strong>: Multiple audits and formal verification</li>
+                <li><strong>Diversified Revenue</strong>: Multiple income streams reduce single-point risks</li>
+                <li><strong>Community Governance</strong>: Decentralized decision-making reduces centralization risks</li>
+                <li><strong>Technical Expertise</strong>: Experienced team with successful track records</li>
+            </ul>
+            
+            <h2>Conclusion</h2>
+            <p>HyperFlow Protocol represents a compelling opportunity to participate in the next generation of DeFi infrastructure on HyperEVM. With native technical advantages, fair community governance, and sustainable tokenomics prioritizing user value, HyperFlow is positioned to become the foundational infrastructure layer for HyperEVM DeFi.</p>
+            
+            <p>The combination of proven technical capabilities, clear market opportunity, and user-centric design creates an attractive risk-adjusted return profile for early supporters of the protocol.</p>
+            
+            <hr style="margin: 40px 0; border: none; border-top: 1px solid #334155;">
+            
+            <p style="text-align: center; color: #64748b;"><strong>For the complete technical details, please refer to the <a href="https://clockerwork02.github.io" style="color: #14b8a6;">HyperFlow Protocol Whitepaper</a>.</strong></p>
+        </div>
     </div>
 </body>
 </html>
